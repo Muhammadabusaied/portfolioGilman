@@ -1,0 +1,102 @@
+[
+  {
+      "id": 1,
+      "title": "How to get around in New York",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, maxime. Accusamus qui incidunt est rem at corrupti, earum fugiat iure. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "date": "Oct 30, 2022",
+      "readTime": "9 min read",
+      "views": "3.5K",
+      "category": "Cities",
+      "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+  },
+  {
+      "id": 2,
+      "title": "Exploring Local Markets",
+      "description": "Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "date": "Sep 12, 2023",
+      "readTime": "7 min read",
+      "views": "4.2K",
+      "category": "Culture",
+      "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBhcnRuZXJzaGlwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+      "id": 3,
+      "title": "Top 10 Attractions in New York",
+      "description": "Explore the must-see attractions in New York City, from Times Square to the Statue of Liberty. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "date": "Aug 18, 2023",
+      "readTime": "12 min read",
+      "views": "5K",
+      "category": "Travel",
+      "imageUrl": "https://images.unsplash.com/photo-1594122230689-45899d9e6f69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXdhcmRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+      "id": 4,
+      "title": "A Guide to Street Food in Bangkok",
+      "description": "Taste the best of Bangkok’s street food with this guide to the city’s top eats. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "date": "Jul 5, 2023",
+      "readTime": "8 min read",
+      "views": "6.3K",
+      "category": "Food",
+      "imageUrl": "https://images.unsplash.com/photo-1505245208761-ba872912fac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg5OHwwfDF8c2VhcmNofDZ8fGZvb2R8ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=400"
+  },
+  {
+      "id": 5,
+      "title": "Hiking Trails in the Rockies",
+      "description": "Explore the best hiking trails in the Rocky Mountains, suitable for all skill levels. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "date": "Jun 1, 2023",
+      "readTime": "15 min read",
+      "views": "2.7K",
+      "category": "Adventure",
+      "imageUrl": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg5OHwwfDF8c2VhcmNofDh8fHRyYXZlbHxlbnwwfHx8&ixlib=rb-1.2.1&q=80&w=400"
+  },
+  {
+      "id": 6,
+      "title": "The Art of Japanese Tea Ceremonies",
+      "description": "Dive into the world of Japanese tea ceremonies, an age-old tradition steeped in culture and history. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "date": "May 14, 2023",
+      "readTime": "5 min read",
+      "views": "1.9K",
+      "category": "Culture",
+      "imageUrl": "https://images.unsplash.com/photo-1505245208761-ba872912fac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg5OHwwfDF8c2VhcmNofDZ8fGZvb2R8ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=400"
+  },
+  {
+      "id": 7,
+      "title": "Photography Tips for Beginners",
+      "description": "Learn the basics of photography with our beginner-friendly guide. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "date": "Apr 22, 2023",
+      "readTime": "10 min read",
+      "views": "8.1K",
+      "category": "Photography",
+      "imageUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg5OHwwfDF8c2VhcmNofDZ8fHBob3RvZ3JhcGh5fGVufDB8fHw&ixlib=rb-1.2.1&q=80&w=400"
+  },
+  {
+      "id": 8,
+      "title": "Understanding Italian Cuisine",
+      "description": "Discover the flavors and recipes that make Italian cuisine one of the most popular worldwide. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "date": "Mar 18, 2023",
+      "readTime": "7 min read",
+      "views": "4.8K",
+      "category": "Food",
+      "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg5OHwwfDF8c2VhcmNofDZ8fGl0YWxpYW58ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=400"
+  },
+  {
+      "id": 9,
+      "title": "The Benefits of Solo Travel",
+      "description": "Explore why solo travel can be one of the most rewarding experiences. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "date": "Feb 8, 2023",
+      "readTime": "6 min read",
+      "views": "7.6K",
+      "category": "Travel",
+      "imageUrl": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg5OHwwfDF8c2VhcmNofDR8fHRyYXZlbHxlbnwwfHx8&ixlib=rb-1.2.1&q=80&w=400"
+  },
+  {
+      "id": 10,
+      "title": "Exploring Ancient Temples in Cambodia",
+      "description": "Step back in time as you explore Cambodia’s ancient temples and cultural landmarks. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "date": "Jan 25, 2023",
+      "readTime": "13 min read",
+      "views": "6.9K",
+      "category": "History",
+      "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg5OHwwfDF8c2VhcmNofDZ8fGl0YWxpYW58ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=400"
+  }
+]
