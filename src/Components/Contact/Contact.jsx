@@ -12,7 +12,12 @@ const Contact = () => {
         e.preventDefault();
         setLoading(true);
 
-        emailjs.sendForm('service_fxpraqr', 'template_7cuxv89', form.current, 'mCXI0_2owg7vwE_HW')
+        emailjs.sendForm(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            form.current,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
             .then((result) => {
                 setLoading(false);
                 Swal.fire({
