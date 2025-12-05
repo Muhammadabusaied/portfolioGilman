@@ -1,4 +1,5 @@
 import { FaCode, FaFileAlt, FaFlask, FaDna } from "react-icons/fa";
+import skillsImage from "../../assets/skills/Skills.jpg";
 
 const Skills = () => {
     const skillCategories = [
@@ -96,6 +97,18 @@ const Skills = () => {
                             </div>
                         </div>
                     ))}
+                </div>
+
+                {/* Skills Image Section */}
+                <div className="mt-20 max-w-5xl mx-auto">
+                    <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-800 group">
+                        <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300"></div>
+                        <img
+                            src={skillsImage}
+                            alt="Skills Visualization"
+                            className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
+                        />
+                    </div>
                 </div>
             </div>
         </div>

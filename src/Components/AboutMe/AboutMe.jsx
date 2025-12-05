@@ -1,5 +1,5 @@
 import { FaGraduationCap, FaCode, FaFlask, FaUniversity } from "react-icons/fa";
-import img1 from "../../assets/profile_photo/1.png";
+import img1 from "../../assets/profile_photo/4.jpg";
 import { Link } from "react-router-dom";
 
 const AboutMe = () => {

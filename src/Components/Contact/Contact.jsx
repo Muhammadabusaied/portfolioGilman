@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiOrcid, SiGooglescholar } from "react-icons/si";
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
@@ -87,14 +88,17 @@ const Contact = () => {
                             <div className="mt-8 pt-8 border-t border-slate-800">
                                 <h4 className="text-lg font-bold text-white mb-4">Follow Me</h4>
                                 <div className="flex gap-4">
-                                    <a href="https://facebook.com/ahsangilman" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-blue-600 transition-colors">
-                                        <FaFacebook />
+                                    <a href="https://orcid.org/0009-0000-4134-6073" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-emerald-500 transition-colors" title="ORCID">
+                                        <SiOrcid />
                                     </a>
-                                    <a href="https://linkedin.com/in/ahsangilman" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
+                                    <a href="https://scholar.google.com/citations?user=8ZmNWSwzS30C&hl" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-blue-500 transition-colors" title="Google Scholar">
+                                        <SiGooglescholar />
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/ahsangilman/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-blue-700 transition-colors" title="LinkedIn">
                                         <FaLinkedin />
                                     </a>
-                                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-sky-500 transition-colors">
-                                        <FaTwitter />
+                                    <a href="https://github.com/AhsanGilman" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-slate-100 transition-colors" title="GitHub">
+                                        <FaGithub />
                                     </a>
                                 </div>
                             </div>

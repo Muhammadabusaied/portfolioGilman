@@ -1,4 +1,5 @@
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiOrcid, SiGooglescholar } from 'react-icons/si';
 
 const Footer = () => {
   return (
@@ -12,14 +13,17 @@ const Footer = () => {
           </div>
 
           <div className="flex space-x-6">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary transition-colors">
-              <FaGithub />
+            <a href="https://orcid.org/0009-0000-4134-6073" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-emerald-500 transition-colors" title="ORCID">
+              <SiOrcid />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary transition-colors">
+            <a href="https://scholar.google.com/citations?user=8ZmNWSwzS30C&hl" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-500 transition-colors" title="Google Scholar">
+              <SiGooglescholar />
+            </a>
+            <a href="https://www.linkedin.com/in/ahsangilman/" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-600 transition-colors" title="LinkedIn">
               <FaLinkedin />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary transition-colors">
-              <FaTwitter />
+            <a href="https://github.com/AhsanGilman" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-white transition-colors" title="GitHub">
+              <FaGithub />
             </a>
           </div>
         </div>

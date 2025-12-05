@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import { FaGithub, FaLinkedin, FaDna, FaLaptopMedical, FaMicroscope, FaCode } from "react-icons/fa";
+import profilePhoto from "../../assets/profile_photo/1.png";
 
 const Home = () => {
     return (
@@ -14,8 +15,7 @@ const Home = () => {
                         <div className="relative w-72 h-72 lg:w-96 lg:h-96">
                             <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
                             <div className="relative w-full h-full rounded-full border-4 border-primary/30 flex items-center justify-center bg-slate-800/50 backdrop-blur-sm overflow-hidden">
-                                {/* Placeholder for Profile Image or 3D Element */}
-                                <FaDna className="text-9xl text-primary opacity-80" />
+                                <img src={profilePhoto} alt="Md Abu Ahsan Gilman" className="w-full h-full object-cover" />
                             </div>
 
                             {/* Floating Icons */}
