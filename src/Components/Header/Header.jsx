@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
+import logo from "../../assets/logo.png";
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -51,8 +52,8 @@ const Header = () => {
                             ))}
                         </ul>
                     </div>
-                    <Link to="/" className="btn btn-ghost normal-case text-xl sm:text-2xl font-heading font-bold text-white whitespace-nowrap">
-                        <span className="text-primary hover:text-white transition-colors">MD Abu Ahsan Gilman</span>
+                    <Link to="/" className="btn btn-ghost normal-case text-xl sm:text-2xl font-heading font-bold text-white whitespace-nowrap p-0">
+                        <img src={logo} alt="Md Abu Ahsan Gilman" className="h-12 w-auto" />
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">

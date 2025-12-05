@@ -1,6 +1,44 @@
+import { useRef, useState } from "react";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 const Contact = () => {
+    const form = useRef();
+    const [loading, setLoading] = useState(false);
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        emailjs.sendForm('service_fxpraqr', 'template_7cuxv89', form.current, 'mCXI0_2owg7vwE_HW')
+            .then((result) => {
+                setLoading(false);
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Your message has been sent successfully. I will get back to you soon!',
+                    icon: 'success',
+                    confirmButtonText: 'Great!',
+                    confirmButtonColor: '#0ea5e9', // primary color
+                    background: '#1e293b', // slate-800
+                    color: '#fff'
+                });
+                form.current.reset();
+            }, (error) => {
+                setLoading(false);
+                console.log(error.text);
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Something went wrong. Please try again later or email directly.',
+                    icon: 'error',
+                    confirmButtonText: 'Okay',
+                    confirmButtonColor: '#f43f5e', // error color
+                    background: '#1e293b',
+                    color: '#fff'
+                });
+            });
+    };
+
     return (
         <div className="min-h-screen bg-base-100 text-slate-300 py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,7 +61,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h4 className="text-lg font-bold text-white">Location</h4>
-                                        <p className="text-slate-400">Bangabandhu Sheikh Mujibur Rahman Agricultural University, Gazipur, Bangladesh</p>
+                                        <p className="text-slate-400">Gazipur Agricultural University, Gazipur, Bangladesh</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-4">
@@ -65,34 +103,36 @@ const Contact = () => {
 
                     {/* Contact Form */}
                     <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800 shadow-xl">
-                        <form className="space-y-6">
+                        <form ref={form} onSubmit={sendEmail} className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text text-slate-300">Name</span>
                                     </label>
-                                    <input type="text" placeholder="Your Name" className="input input-bordered bg-slate-800 border-slate-700 text-white focus:border-primary" />
+                                    <input type="text" name="name" required placeholder="Your Name" className="input input-bordered bg-slate-800 border-slate-700 text-white focus:border-primary" />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text text-slate-300">Email</span>
                                     </label>
-                                    <input type="email" placeholder="Your Email" className="input input-bordered bg-slate-800 border-slate-700 text-white focus:border-primary" />
+                                    <input type="email" name="email" required placeholder="Your Email" className="input input-bordered bg-slate-800 border-slate-700 text-white focus:border-primary" />
                                 </div>
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-slate-300">Subject</span>
                                 </label>
-                                <input type="text" placeholder="Project Inquiry" className="input input-bordered bg-slate-800 border-slate-700 text-white focus:border-primary" />
+                                <input type="text" name="subject" required placeholder="Project Inquiry" className="input input-bordered bg-slate-800 border-slate-700 text-white focus:border-primary" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-slate-300">Message</span>
                                 </label>
-                                <textarea className="textarea textarea-bordered h-32 bg-slate-800 border-slate-700 text-white focus:border-primary" placeholder="Tell me about your project..."></textarea>
+                                <textarea name="message" required className="textarea textarea-bordered h-32 bg-slate-800 border-slate-700 text-white focus:border-primary" placeholder="Tell me about your project..."></textarea>
                             </div>
-                            <button className="btn btn-primary w-full font-bold">Send Message</button>
+                            <button type="submit" disabled={loading} className="btn btn-primary w-full font-bold">
+                                {loading ? <span className="loading loading-spinner"></span> : 'Send Message'}
+                            </button>
                         </form>
                     </div>
                 </div>

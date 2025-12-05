@@ -1,26 +1,46 @@
-import { FaMicroscope, FaCode, FaPenNib, FaFileAlt } from "react-icons/fa";
+import { FaCode, FaFileAlt, FaFlask, FaDna } from "react-icons/fa";
 
 const Skills = () => {
     const skillCategories = [
         {
-            title: "Technical Skills",
-            icon: <FaMicroscope className="text-3xl text-primary" />,
-            skills: ["Metagenomic Sequencing", "Bioinformatics Analysis", "Data Analysis and Visualization"]
+            title: "Wet Lab",
+            icon: <FaFlask className="text-3xl text-primary" />,
+            skills: [
+                "Bacterial culture and isolation",
+                "Gram staining and microscopy",
+                "Antibiotic susceptibility testing",
+                "DNA/RNA extraction from various samples",
+                "Conventional PCR",
+                "Gel electrophoresis"
+            ]
         },
         {
-            title: "Programming Language",
-            icon: <FaCode className="text-3xl text-secondary" />,
-            skills: ["R", "Python", "JavaScript"]
+            title: "Dry Lab",
+            icon: <FaDna className="text-3xl text-secondary" />,
+            skills: [
+                {
+                    name: "NGS data analysis:",
+                    subSkills: [
+                        "WGS",
+                        "16S rRNA Amplicon Sequencing",
+                        "Shotgun Metagenomics"
+                    ]
+                }
+            ]
         },
         {
-            title: "Adobe Skills",
-            icon: <FaPenNib className="text-3xl text-accent" />,
-            skills: ["Adobe Photoshop", "Adobe Illustrator"]
+            title: "Programming",
+            icon: <FaCode className="text-3xl text-accent" />,
+            skills: ["Linux Shell", "R", "Python"]
         },
         {
-            title: "Microsoft Skills",
+            title: "Technical & Research Skills",
             icon: <FaFileAlt className="text-3xl text-emerald-400" />,
-            skills: ["Microsoft Word", "Microsoft Excel", "Microsoft PowerPoint"]
+            skills: [
+                "Handling large-scale sequencing datasets",
+                "Scientific writing and manuscript preparation",
+                "Poster and conference presentation"
+            ]
         }
     ];
 
@@ -49,9 +69,28 @@ const Skills = () => {
                             </div>
                             <div className="flex flex-col gap-3">
                                 {category.skills.map((skill, idx) => (
-                                    <div key={idx} className="flex items-center gap-3">
-                                        <div className="w-2 h-2 rounded-full bg-primary"></div>
-                                        <span className="text-slate-300 font-medium">{skill}</span>
+                                    <div key={idx}>
+                                        {typeof skill === 'string' ? (
+                                            <div className="flex items-center gap-3">
+                                                <div className="w-2 h-2 rounded-full bg-primary shrink-0"></div>
+                                                <span className="text-slate-300 font-medium">{skill}</span>
+                                            </div>
+                                        ) : (
+                                            <div className="space-y-2">
+                                                <div className="flex items-center gap-3">
+                                                    <div className="w-2 h-2 rounded-full bg-primary shrink-0"></div>
+                                                    <span className="text-slate-300 font-medium">{skill.name}</span>
+                                                </div>
+                                                <div className="ml-8 flex flex-col gap-2 border-l-2 border-slate-700 pl-4 py-1">
+                                                    {skill.subSkills.map((sub, subIdx) => (
+                                                        <div key={subIdx} className="flex items-center gap-3">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></div>
+                                                            <span className="text-slate-400 text-sm">{sub}</span>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        )}
                                     </div>
                                 ))}
                             </div>

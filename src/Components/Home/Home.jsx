@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
-import { FaGithub, FaLinkedin, FaDna, FaCode, FaMicroscope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDna, FaLaptopMedical, FaMicroscope, FaCode } from "react-icons/fa";
 
 const Home = () => {
     return (
@@ -33,14 +33,14 @@ const Home = () => {
 
                     <div className="w-full lg:w-1/2 text-center lg:text-left mt-10 lg:mt-0">
                         <h2 className="text-primary font-bold tracking-wide uppercase mb-4">Welcome to my world</h2>
-                        <h1 className="text-5xl lg:text-7xl font-heading font-bold text-white mb-6 leading-tight">
-                            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">MD Abu Ahsan Gilman</span>
+                        <h1 className="text-3xl sm:text-5xl lg:text-7xl font-heading font-bold text-white mb-6 leading-tight">
+                            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary whitespace-normal md:whitespace-nowrap">Md Abu Ahsan Gilman</span>
                         </h1>
                         <div className="text-2xl lg:text-3xl font-bold text-slate-400 mb-8 h-20">
                             <Typewriter
                                 options={{
                                     strings: [
-                                        'Metagenomics Researcher',
+                                        'Genomic & Metagenomic Researcher',
                                         'DVM Student',
                                         'Bioinformatics Analyst'
                                     ],
@@ -86,15 +86,15 @@ const Home = () => {
                             <div className="w-14 h-14 rounded-xl bg-secondary/10 flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
                                 <FaDna className="text-3xl text-secondary" />
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-3">Bioinformatics</h3>
-                            <p className="text-slate-400">Using Python, R, and advanced statistical methods to interpret complex biological data.</p>
+                            <h3 className="text-xl font-bold text-white mb-3">Genomics</h3>
+                            <p className="text-slate-400">Investigating complete sets of DNA and their function to understand genetic variations and evolutionary relationships.</p>
                         </div>
                         <div className="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-accent/50 transition-all group">
                             <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
-                                <FaCode className="text-3xl text-accent" />
+                                <FaLaptopMedical className="text-3xl text-accent" />
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-3">Web Development</h3>
-                            <p className="text-slate-400">Building tools and applications using the MERN stack to visualize and manage research data.</p>
+                            <h3 className="text-xl font-bold text-white mb-3">Bioinformatics</h3>
+                            <p className="text-slate-400">Using Python, R, and advanced statistical methods to interpret complex biological data.</p>
                         </div>
                     </div>
                 </div>

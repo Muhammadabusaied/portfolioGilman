@@ -11,7 +11,7 @@ const MyName = () => {
                         typewriter
                             .typeString("Hi there,<br>")
                             .pauseFor(100)
-                            .typeString(" I'm MD Abu Ahsan Gilman.")
+                            .typeString(" I'm Md Abu Ahsan Gilman.")
                             .start();
                     }}
                 />

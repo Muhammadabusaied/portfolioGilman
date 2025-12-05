@@ -1,8 +1,6 @@
-import { FaGraduationCap, FaCode, FaFlask, FaUniversity, FaMicroscope, FaDna } from "react-icons/fa";
-import img1 from "../../assets/profile_photo/1.jpg";
-import img2 from "../../assets/profile_photo/2.jpg";
-import img3 from "../../assets/profile_photo/3.jpg";
-import img4 from "../../assets/profile_photo/4.jpg";
+import { FaGraduationCap, FaCode, FaFlask, FaUniversity } from "react-icons/fa";
+import img1 from "../../assets/profile_photo/1.png";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
     return (
@@ -15,54 +13,13 @@ const AboutMe = () => {
 
                 <div className="flex flex-col lg:flex-row gap-12 items-start">
                     {/* Profile Image & Quick Info Sidebar */}
-                    <div className="w-full lg:w-1/3 sticky top-24">
-                        <div className="bg-slate-900 rounded-2xl p-6 border border-slate-800 shadow-xl">
+                    <div className="w-full lg:w-1/3 lg:sticky lg:top-24">
+                        <div className="bg-slate-900 rounded-2xl p-4 lg:p-6 border border-slate-800 shadow-xl">
                             <div className="relative w-full aspect-square mb-6 overflow-hidden rounded-xl">
-                                <div className="carousel w-full h-full rounded-xl">
-                                    <div id="slide1" className="carousel-item relative w-full">
-                                        <img src={img1} className="w-full h-full object-cover" />
-                                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                            <a href="#slide4" className="btn btn-circle btn-xs sm:btn-sm btn-ghost hover:bg-slate-800/50 text-white">❮</a>
-                                            <a href="#slide2" className="btn btn-circle btn-xs sm:btn-sm btn-ghost hover:bg-slate-800/50 text-white">❯</a>
-                                        </div>
-                                    </div>
-                                    <div id="slide2" className="carousel-item relative w-full">
-                                        <img src={img2} className="w-full h-full object-cover" />
-                                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                            <a href="#slide1" className="btn btn-circle btn-xs sm:btn-sm btn-ghost hover:bg-slate-800/50 text-white">❮</a>
-                                            <a href="#slide3" className="btn btn-circle btn-xs sm:btn-sm btn-ghost hover:bg-slate-800/50 text-white">❯</a>
-                                        </div>
-                                    </div>
-                                    <div id="slide3" className="carousel-item relative w-full">
-                                        <img src={img3} className="w-full h-full object-cover" />
-                                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                            <a href="#slide2" className="btn btn-circle btn-xs sm:btn-sm btn-ghost hover:bg-slate-800/50 text-white">❮</a>
-                                            <a href="#slide4" className="btn btn-circle btn-xs sm:btn-sm btn-ghost hover:bg-slate-800/50 text-white">❯</a>
-                                        </div>
-                                    </div>
-                                    <div id="slide4" className="carousel-item relative w-full">
-                                        <img src={img4} className="w-full h-full object-cover" />
-                                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                            <a href="#slide3" className="btn btn-circle btn-xs sm:btn-sm btn-ghost hover:bg-slate-800/50 text-white">❮</a>
-                                            <a href="#slide1" className="btn btn-circle btn-xs sm:btn-sm btn-ghost hover:bg-slate-800/50 text-white">❯</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <img src={img1} className="w-full h-full object-cover" />
                             </div>
-                            <h2 className="text-2xl font-bold text-white text-center mb-2">MD Abu Ahsan Gilman</h2>
-                            <p className="text-primary text-center font-medium mb-6">DVM Student & Researcher</p>
-
-                            <div className="space-y-4">
-                                <div className="flex items-center gap-3 text-slate-400">
-                                    <FaGraduationCap className="text-xl text-secondary" />
-                                    <span>DVM Student, BSMRAU</span>
-                                </div>
-                                <div className="flex items-center gap-3 text-slate-400">
-                                    <FaFlask className="text-xl text-secondary" />
-                                    <span>Metagenomics Researcher</span>
-                                </div>
-                            </div>
-
+                            <h2 className="text-2xl font-bold text-white text-center mb-2">Md Abu Ahsan Gilman</h2>
+                            <p className="text-primary text-center font-medium mb-6">Genomics & Metagenomics Researcher</p>
                             <div className="mt-8">
                                 <a href="/contact" className="btn btn-primary w-full rounded-lg font-bold">Get in Touch</a>
                             </div>
@@ -73,38 +30,39 @@ const AboutMe = () => {
                     <div className="w-full lg:w-2/3 space-y-8">
 
                         {/* Biography / Intro */}
+                        {/* Biography / Intro */}
                         <div className="bg-slate-900/50 rounded-2xl p-8 border border-slate-800">
-                            <h3 className="text-2xl font-bold text-white mb-4">Biography</h3>
+                            <h3 className="text-2xl font-bold text-white mb-4">Who I Am</h3>
                             <p className="text-slate-400 leading-relaxed text-justify">
-                                I'm MD Abu Ahsan Gilman. I am a dedicated student of Doctor of Veterinary Medicine (DVM) at Bangabandhu Sheikh Mujibur Rahman Agricultural University, with a deep passion for the rapidly evolving field of metagenomics. My academic journey has allowed me to develop a solid foundation in veterinary science, while my research interests have expanded into the intersection of animal health, microbiology, and cutting-edge genomic technologies.
+                                I’m Md Abu Ahsan Gilman, a researcher specializing in genomics, bioinformatics, and microbiome analysis. I am passionate about transforming biological data into meaningful insights that support advancements in health, agriculture, and environmental sustainability.
+                                <br /><br />
+                                My academic and research experiences span molecular biology labs, computational analysis platforms, and collaborative scientific projects.
                             </p>
                         </div>
 
                         {/* Research Focus */}
                         <div className="bg-slate-900/50 rounded-2xl p-8 border border-slate-800">
                             <div className="flex items-center gap-3 mb-4">
-                                <FaMicroscope className="text-2xl text-primary" />
                                 <h3 className="text-2xl font-bold text-white">Research Focus</h3>
                             </div>
-                            <p className="text-slate-400 leading-relaxed text-justify mb-4">
-                                In my current research, I focus on metagenomics, a field that explores the genetic material of microbial communities within specific environments, without the need for traditional culturing methods. This is particularly important in veterinary medicine, as the health of animals is closely tied to the microbiomes they host. By analyzing the genetic diversity of microbial populations, I aim to uncover insights into how these organisms influence animal health, disease resistance, and overall well-being.
-                            </p>
-                        </div>
-
-                        {/* Technological Approach */}
-                        <div className="bg-slate-900/50 rounded-2xl p-8 border border-slate-800">
-                            <div className="flex items-center gap-3 mb-4">
-                                <FaDna className="text-2xl text-secondary" />
-                                <h3 className="text-2xl font-bold text-white">Technological Approach</h3>
-                            </div>
-                            <p className="text-slate-400 leading-relaxed text-justify">
-                                My research primarily involves the use of high-throughput sequencing technologies, bioinformatics tools, and advanced statistical methods to analyze microbial communities. One of the key aspects of my work is the investigation of microbial diversity through 16S rRNA gene sequencing, a method widely used to study bacterial taxonomy and phylogeny. This technique allows me to identify and characterize microbial species present in various samples, contributing to a better understanding of their roles in different biological processes.
-                            </p>
+                            <ul className="text-slate-400 leading-relaxed space-y-2">
+                                <li> NGS-driven microbiome profiling, including:
+                                    <ul className="ml-6 mt-1 space-y-1">
+                                        <li>• 16S rRNA amplicon sequencing</li>
+                                        <li>• Shotgun metagenomic sequencing</li>
+                                    </ul>
+                                </li>
+                                <li> Whole-Genome Sequencing (WGS) of bacteria and downstream genomic analysis</li>
+                                <li> Microbial community diversity, taxonomic profiling, and functional prediction</li>
+                                <li> Genomic data interpretation, variant calling, and molecular characterization</li>
+                                <li> Soil and agricultural microbiome research</li>
+                                <li> Computational pipelines, workflow automation, and statistical analysis</li>
+                            </ul>
                         </div>
 
                         {/* Current Studies */}
                         <div className="bg-slate-900 rounded-2xl p-8 border border-slate-800 shadow-lg">
-                            <h3 className="text-2xl font-bold text-white mb-6">Current Studies</h3>
+                            <h3 className="text-2xl font-bold text-white mb-6">Current Study</h3>
                             <div className="flex flex-col sm:flex-row items-center gap-6">
                                 {/* Left Side: Varsity Logo Placeholder */}
                                 <div className="w-24 h-24 shrink-0 bg-white rounded-full flex items-center justify-center p-2">
@@ -115,7 +73,12 @@ const AboutMe = () => {
                                 {/* Right Side: Details */}
                                 <div className="text-center sm:text-left">
                                     <h4 className="text-xl font-bold text-white">Doctor of Veterinary Medicine (DVM)</h4>
-                                    <p className="text-primary font-medium mt-1">Bangabandhu Sheikh Mujibur Rahman Agricultural University</p>
+                                    <p className="text-primary font-medium mt-1">
+                                        <a href="https://gau.edu.bd/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                                            Gazipur Agricultural University (GAU), Gazipur-1706, Bangladesh
+                                        </a>
+                                    </p>
+                                    <p className="text-slate-400 text-sm mt-1">Expected Graduation: 22 January 2026</p>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +87,9 @@ const AboutMe = () => {
                         <div className="bg-slate-900/50 rounded-2xl p-8 border border-slate-800">
                             <h3 className="text-2xl font-bold text-white mb-4">Academic and Professional Goals</h3>
                             <p className="text-slate-400 leading-relaxed text-justify">
-                                My ultimate goal is to become an expert researcher in the field of metagenomics. I aspire to deepen my knowledge, conduct impactful research, and contribute valuable insights to the scientific community. I am committed to pursuing excellence in my research endeavors and exploring new frontiers in the study of microbial communities.
+                                I aim to advance my expertise in NGS-based microbiome analysis, whole-genome sequencing, and computational genomics while completing my DVM at GAU. My short-term focus is to strengthen research skills, publish impactful work, and refine both laboratory and bioinformatics competencies.
+                                <br /><br />
+                                Long-term, I aspire to pursue graduate studies and build a career in genomics, microbiome research, and veterinary biomedical science, contributing to solutions in animal health, antimicrobial resistance, and agricultural sustainability through data-driven science.
                             </p>
                         </div>
 
