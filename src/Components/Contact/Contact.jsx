@@ -1,91 +1,101 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Contact = () => {
     return (
-        <div className="min-h-screen bg-base-100 flex flex-col items-center justify-center p-8">
-            <br/><br/><br/><br/>
-            <h1 className="text-5xl text-center font-bold">Contact Me</h1>
-            <br/><br/>
-            {/* Contact Details */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-                <div className="text-center p-4 bg-white text-cyan-500 rounded-lg shadow-md">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="Location Icon" className="mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold">LOCATION</h3>
-                    <p>Bangabandhu Sheikh Mujibur Rahman Agricultural University, Gazipur, Bangladesh</p>
-                </div>
-
-                <div className="text-center p-4 bg-white text-cyan-500 rounded-lg shadow-md">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone Icon" className="mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold">PHONE NUMBER</h3>
-                    <p>+880 1819730054</p>
-                </div>
-
-                <div className="text-center p-4 bg-white text-cyan-500 rounded-lg shadow-md">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Email Icon" className="mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold">EMAIL</h3>
-                    <p>ahsan.gilman@gmail.com</p>
-                </div>
-                
-                <div className="text-center p-4 bg-white text-cyan-500 rounded-lg shadow-md">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/facebook.png" alt="Phone Icon" className="mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold">FACEBOOK</h3>
-                    <p><Link to={"https://www.facebook.com/ahsangilman"} target="_blank">https://www.facebook.com/ahsangilman</Link></p>
-                </div>
-
-                
-                <div className="text-center p-4 bg-white text-cyan-500 rounded-lg shadow-md">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="Phone Icon" className="mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold">LINKEDIN</h3>
-                    <p><Link to={"https://www.linkedin.com/in/ahsangilman"} target="_blank">https://www.linkedin.com/in/ahsangilman</Link></p>
-                </div>
-
-
-                {/* <div className="text-center p-4 bg-white text-cyan-500 rounded-lg shadow-md">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/fax.png" alt="Fax Icon" className="mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold">FAX</h3>
-                    <p>1-234-567-8900</p>
-                </div> */}
-
-            </div>
-
-            {/* Contact Form and Info */}
-            <div className="flex flex-col lg:flex-row items-center justify-center w-full max-w-6xl">
-                {/* Text Section */}
-                {/* <div className="lg:w-1/2 bg-cyan-600 p-8 rounded-lg text-left shadow-lg mb-6 lg:mb-0">
-                    <h2 className="text-4xl font-bold mb-4">Contact Info</h2>
-                    <p className="mb-6">
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div className="min-h-screen bg-base-100 text-slate-300 py-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-16">
+                    <h1 className="text-5xl font-heading font-bold text-white mb-4">Get In Touch</h1>
+                    <p className="text-slate-400 max-w-2xl mx-auto">
+                        Have a project in mind or just want to say hi? I'd love to hear from you.
                     </p>
-                    <div className="w-full">
-                        <img src="https://via.placeholder.com/300" alt="Truck Image" className="rounded-full mb-2" />
-                        <p className="text-white">
-                            Images from <a href="https://www.freepik.com" className="underline">Freepik</a>
-                        </p>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    {/* Contact Info */}
+                    <div className="space-y-8">
+                        <div className="bg-slate-900/50 p-8 rounded-2xl border border-slate-800">
+                            <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
+                            <div className="space-y-6">
+                                <div className="flex items-start gap-4">
+                                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                                        <FaMapMarkerAlt className="text-primary text-xl" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-lg font-bold text-white">Location</h4>
+                                        <p className="text-slate-400">Bangabandhu Sheikh Mujibur Rahman Agricultural University, Gazipur, Bangladesh</p>
+                                    </div>
+                                </div>
+                                <div className="flex items-start gap-4">
+                                    <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
+                                        <FaPhone className="text-secondary text-xl" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-lg font-bold text-white">Phone</h4>
+                                        <p className="text-slate-400">+880 1819730054</p>
+                                    </div>
+                                </div>
+                                <div className="flex items-start gap-4">
+                                    <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
+                                        <FaEnvelope className="text-accent text-xl" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-lg font-bold text-white">Email</h4>
+                                        <p className="text-slate-400">ahsan.gilman@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="mt-8 pt-8 border-t border-slate-800">
+                                <h4 className="text-lg font-bold text-white mb-4">Follow Me</h4>
+                                <div className="flex gap-4">
+                                    <a href="https://facebook.com/ahsangilman" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-blue-600 transition-colors">
+                                        <FaFacebook />
+                                    </a>
+                                    <a href="https://linkedin.com/in/ahsangilman" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
+                                        <FaLinkedin />
+                                    </a>
+                                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-sky-500 transition-colors">
+                                        <FaTwitter />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div> */}
 
-                {/* Form Section */}
-                {/* <div className="lg:w-1/2 bg-white text-cyan-500 p-8 rounded-lg shadow-lg">
-                    <form className="space-y-4">
-                        <div>
-                            <label className="block text-lg">Email</label>
-                            <input type="email" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400" placeholder="Enter a valid email address" />
-                        </div>
-
-                        <div>
-                            <label className="block text-lg">Name</label>
-                            <input type="text" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400" placeholder="Enter your Name" />
-                        </div>
-
-                        <div>
-                            <label className="block text-lg">Message</label>
-                            <textarea className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400" rows="4" placeholder="Enter your message"></textarea>
-                        </div>
-
-                        <button type="submit" className="w-full bg-cyan-500 text-white py-2 rounded-lg hover:bg-cyan-600 transition duration-300">SUBMIT</button>
-                    </form>
-                </div> */}
+                    {/* Contact Form */}
+                    <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800 shadow-xl">
+                        <form className="space-y-6">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div className="form-control">
+                                    <label className="label">
+                                        <span className="label-text text-slate-300">Name</span>
+                                    </label>
+                                    <input type="text" placeholder="Your Name" className="input input-bordered bg-slate-800 border-slate-700 text-white focus:border-primary" />
+                                </div>
+                                <div className="form-control">
+                                    <label className="label">
+                                        <span className="label-text text-slate-300">Email</span>
+                                    </label>
+                                    <input type="email" placeholder="Your Email" className="input input-bordered bg-slate-800 border-slate-700 text-white focus:border-primary" />
+                                </div>
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text text-slate-300">Subject</span>
+                                </label>
+                                <input type="text" placeholder="Project Inquiry" className="input input-bordered bg-slate-800 border-slate-700 text-white focus:border-primary" />
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text text-slate-300">Message</span>
+                                </label>
+                                <textarea className="textarea textarea-bordered h-32 bg-slate-800 border-slate-700 text-white focus:border-primary" placeholder="Tell me about your project..."></textarea>
+                            </div>
+                            <button className="btn btn-primary w-full font-bold">Send Message</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     );

@@ -12,15 +12,21 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div>
-      <section className="w-screen py-20 bg-base-200">
-        <h1 className="mb-12 mt-12 text-center font-sans text-5xl font-bold">My Blogs</h1>
-        <div className="mx-auto grid max-w-screen-lg grid-cols-1 gap-5 p-5 sm:grid-cols-2 md:grid-cols-3 lg:gap-10">
+    <div className="min-h-screen bg-base-100 text-slate-300 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h1 className="text-5xl font-heading font-bold text-white mb-4">My Blogs</h1>
+          <p className="text-slate-400 max-w-2xl mx-auto">
+            Thoughts, tutorials, and insights on web development and technology.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogs.map((blog) => (
             <Blog key={blog.id} blog={blog} />
           ))}
         </div>
-      </section>
+      </div>
     </div>
   );
 };

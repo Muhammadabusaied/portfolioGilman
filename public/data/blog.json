@@ -1,102 +1,62 @@
 [
-  {
-      "id": 1,
-      "title": "How to get around in New York",
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, maxime. Accusamus qui incidunt est rem at corrupti, earum fugiat iure. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "date": "Oct 30, 2022",
-      "readTime": "9 min read",
-      "views": "3.5K",
-      "category": "Cities",
-      "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-  },
-  {
-      "id": 2,
-      "title": "Exploring Local Markets",
-      "description": "Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "date": "Sep 12, 2023",
-      "readTime": "7 min read",
-      "views": "4.2K",
-      "category": "Culture",
-      "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBhcnRuZXJzaGlwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-  },
-  {
-      "id": 3,
-      "title": "Top 10 Attractions in New York",
-      "description": "Explore the must-see attractions in New York City, from Times Square to the Statue of Liberty. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "date": "Aug 18, 2023",
-      "readTime": "12 min read",
-      "views": "5K",
-      "category": "Travel",
-      "imageUrl": "https://images.unsplash.com/photo-1594122230689-45899d9e6f69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXdhcmRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-  },
-  {
-      "id": 4,
-      "title": "A Guide to Street Food in Bangkok",
-      "description": "Taste the best of Bangkok’s street food with this guide to the city’s top eats. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "date": "Jul 5, 2023",
-      "readTime": "8 min read",
-      "views": "6.3K",
-      "category": "Food",
-      "imageUrl": "https://images.unsplash.com/photo-1505245208761-ba872912fac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg5OHwwfDF8c2VhcmNofDZ8fGZvb2R8ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=400"
-  },
-  {
-      "id": 5,
-      "title": "Hiking Trails in the Rockies",
-      "description": "Explore the best hiking trails in the Rocky Mountains, suitable for all skill levels. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "date": "Jun 1, 2023",
-      "readTime": "15 min read",
-      "views": "2.7K",
-      "category": "Adventure",
-      "imageUrl": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg5OHwwfDF8c2VhcmNofDh8fHRyYXZlbHxlbnwwfHx8&ixlib=rb-1.2.1&q=80&w=400"
-  },
-  {
-      "id": 6,
-      "title": "The Art of Japanese Tea Ceremonies",
-      "description": "Dive into the world of Japanese tea ceremonies, an age-old tradition steeped in culture and history. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "date": "May 14, 2023",
-      "readTime": "5 min read",
-      "views": "1.9K",
-      "category": "Culture",
-      "imageUrl": "https://images.unsplash.com/photo-1505245208761-ba872912fac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg5OHwwfDF8c2VhcmNofDZ8fGZvb2R8ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=400"
-  },
-  {
-      "id": 7,
-      "title": "Photography Tips for Beginners",
-      "description": "Learn the basics of photography with our beginner-friendly guide. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "date": "Apr 22, 2023",
-      "readTime": "10 min read",
-      "views": "8.1K",
-      "category": "Photography",
-      "imageUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg5OHwwfDF8c2VhcmNofDZ8fHBob3RvZ3JhcGh5fGVufDB8fHw&ixlib=rb-1.2.1&q=80&w=400"
-  },
-  {
-      "id": 8,
-      "title": "Understanding Italian Cuisine",
-      "description": "Discover the flavors and recipes that make Italian cuisine one of the most popular worldwide. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "date": "Mar 18, 2023",
-      "readTime": "7 min read",
-      "views": "4.8K",
-      "category": "Food",
-      "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg5OHwwfDF8c2VhcmNofDZ8fGl0YWxpYW58ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=400"
-  },
-  {
-      "id": 9,
-      "title": "The Benefits of Solo Travel",
-      "description": "Explore why solo travel can be one of the most rewarding experiences. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "date": "Feb 8, 2023",
-      "readTime": "6 min read",
-      "views": "7.6K",
-      "category": "Travel",
-      "imageUrl": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg5OHwwfDF8c2VhcmNofDR8fHRyYXZlbHxlbnwwfHx8&ixlib=rb-1.2.1&q=80&w=400"
-  },
-  {
-      "id": 10,
-      "title": "Exploring Ancient Temples in Cambodia",
-      "description": "Step back in time as you explore Cambodia’s ancient temples and cultural landmarks. Discover the best ways to explore local markets and hidden gems across the city. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "date": "Jan 25, 2023",
-      "readTime": "13 min read",
-      "views": "6.9K",
-      "category": "History",
-      "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg5OHwwfDF8c2VhcmNofDZ8fGl0YWxpYW58ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=400"
-  }
+    {
+        "id": 1,
+        "title": "The Role of Metagenomics in Veterinary Medicine",
+        "description": "Metagenomics is transforming how we understand animal health. By analyzing microbial communities without culturing, we can identify pathogens and beneficial microbes that influence disease resistance. <br><br> This article explores the applications of metagenomics in diagnosing veterinary diseases and improving animal welfare.",
+        "date": "Dec 15, 2023",
+        "readTime": "10 min read",
+        "views": "1.5K",
+        "category": "Research",
+        "imageUrl": "https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+        "id": 2,
+        "title": "Understanding 16S rRNA Gene Sequencing",
+        "description": "16S rRNA gene sequencing is a cornerstone of microbial diversity studies. Learn how this technique allows researchers to classify bacteria and study phylogeny. <br><br> We delve into the workflow of 16S sequencing, from DNA extraction to bioinformatics analysis.",
+        "date": "Nov 28, 2023",
+        "readTime": "12 min read",
+        "views": "1.1K",
+        "category": "Bioinformatics",
+        "imageUrl": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+        "id": 3,
+        "title": "Building a Research Portfolio with React",
+        "description": "As a researcher, having a personal website is crucial. Here's how I built my portfolio using React and TailwindCSS to showcase my publications and projects. <br><br> A step-by-step guide for academics looking to establish an online presence.",
+        "date": "Oct 10, 2023",
+        "readTime": "8 min read",
+        "views": "900",
+        "category": "Web Dev",
+        "imageUrl": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+        "id": 4,
+        "title": "Data Visualization in R for Biologists",
+        "description": "R is a powerful tool for biological data visualization. Discover how to use ggplot2 to create stunning plots for your research papers. <br><br> Tips and tricks for mastering data viz in R.",
+        "date": "Sep 05, 2023",
+        "readTime": "7 min read",
+        "views": "1.3K",
+        "category": "Data Analysis",
+        "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+        "id": 5,
+        "title": "Introduction to Python for Bioinformatics",
+        "description": "Python is becoming the language of choice for bioinformatics. This guide introduces key libraries like Biopython and Pandas for handling genomic data. <br><br> Start your journey into computational biology with Python.",
+        "date": "Aug 20, 2023",
+        "readTime": "9 min read",
+        "views": "1.0K",
+        "category": "Programming",
+        "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+        "id": 6,
+        "title": "MERN Stack: A Modern Solution for Lab Management",
+        "description": "How the MERN stack (MongoDB, Express, React, Node) can be used to build efficient laboratory management systems for tracking samples and results. <br><br> Bridging the gap between web development and scientific workflows.",
+        "date": "Jul 12, 2023",
+        "readTime": "6 min read",
+        "views": "850",
+        "category": "Development",
+        "imageUrl": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+    }
 ]

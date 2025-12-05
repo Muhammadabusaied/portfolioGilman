@@ -7,6 +7,8 @@ import Contact from "../Components/Contact/Contact";
 import Skills from "../Components/Skills/Skills";
 import Blogs from "../Components/Blogs/Blogs";
 import FullBlog from "../Components/Blogs/FullBlog";
+import NewBlog from "../Components/Blogs/NewBlog";
+import Achievements from "../Components/Achievements/Achievements";
 
 const router = createBrowserRouter([
     {
@@ -18,8 +20,12 @@ const router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
-                path: "/projects",
+                path: "/research",
                 element: <Projects></Projects>
+            },
+            {
+                path: "/achievements",
+                element: <Achievements></Achievements>
             },
             {
                 path: "/aboutme",
@@ -40,6 +46,10 @@ const router = createBrowserRouter([
             {
                 path: "/blog/:id",
                 element: <FullBlog></FullBlog>
+            },
+            {
+                path: "/newblog",
+                element: <NewBlog></NewBlog>
             }
         ]
     },

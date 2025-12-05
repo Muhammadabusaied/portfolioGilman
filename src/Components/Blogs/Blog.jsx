@@ -12,58 +12,51 @@ const Blog = ({ blog }) => {
         navigate(`/blog/${blog.id}`);
     };
 
-    return (
-        <article key={blog.id} className="group h-full overflow-hidden rounded-lg border-2 border-gray-200 border-opacity-60 shadow-lg">
-            <img
-                className="w-full transform object-cover object-center transition duration-100 ease-in-out group-hover:scale-105 md:h-36 lg:h-48"
-                src={blog.imageUrl}
-                alt="blog"
-            />
-            <h2 className="title-font inline-block cursor-pointer px-6 pt-4 pb-1 text-xs font-semibold uppercase tracking-widest text-orange-600 hover:font-bold">
-                {blog.category}
-            </h2>
-            <div className="py-1 px-6">
-                <h1 className="title-font mb-3 inline-block cursor-pointer text-xl font-extrabold tracking-wide text-gray-800">
-                    {blog.title}
-                </h1>
+    // Slicing the description and adding "..." only if it’s longer than 100 characters
+    const shortDescription = `${blog.description.slice(0, 100)}${isLongDescription ? '...' : ''}`;
 
-                {/* Truncated description */}
-                <p className="mb-3 leading-relaxed text-black-100">
-                    {`${blog.description.slice(0, 100)}${isLongDescription ? '...' : ''}`}
+    return (
+        <article className="group h-full overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 hover:border-primary/50 transition-all duration-300 shadow-lg flex flex-col">
+            <div className="relative overflow-hidden h-48 shrink-0">
+                <img
+                    className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
+                    src={blog.imageUrl}
+                    alt={blog.title}
+                />
+                <div className="absolute top-4 left-4">
+                    <span className="px-3 py-1 bg-primary text-slate-900 text-xs font-bold uppercase tracking-wider rounded-full">
+                        {blog.category}
+                    </span>
+                </div>
+            </div>
+
+            <div className="p-6 flex flex-col flex-grow">
+                <h2
+                    onClick={redirectToFullBlog}
+                    className="text-xl font-bold text-white mb-3 cursor-pointer hover:text-primary transition-colors line-clamp-2"
+                >
+                    {blog.title}
+                </h2>
+
+                <div className="text-slate-400 text-sm mb-4 flex-grow">
+                    <span
+                        dangerouslySetInnerHTML={{
+                            __html: isLongDescription ? shortDescription : blog.description,
+                        }}
+                    ></span>
                     {isLongDescription && (
                         <span
                             onClick={redirectToFullBlog}
-                            className="ml-2 cursor-pointer text-blue-600 hover:underline"
+                            className="ml-2 cursor-pointer text-primary hover:underline font-medium"
                         >
-                            See more
+                            Read more
                         </span>
                     )}
-                </p>
-            </div>
-
-            <div className="flex flex-wrap items-center justify-between px-6 pt-1 pb-4">
-                <div className="flex flex-wrap text-sm text-gray-500">
-                    <span className="mr-1">{blog.date}</span>
                 </div>
-                <div className="mt-1">
-                    <span className="mr-3 ml-auto inline-flex items-center py-1 pr-3 text-sm leading-none text-gray-400 md:ml-0 lg:ml-auto">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                            />
-                        </svg>
-                        {blog.views}
-                    </span>
+
+                <div className="flex items-center justify-between pt-4 border-t border-slate-800 text-xs text-slate-500">
+                    <span>{blog.date}</span>
+                    <span>5 min read</span>
                 </div>
             </div>
         </article>
